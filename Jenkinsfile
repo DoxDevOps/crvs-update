@@ -14,9 +14,9 @@ pipeline {
       }
     }
 
-    stage('Deploy') {
+    stage('Fetching Backend from the repo') {
       steps {
-        sh 'make publish'
+        echo 'Fetching Backend from the repo '
       }
     }
 
