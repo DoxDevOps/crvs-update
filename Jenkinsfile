@@ -8,7 +8,7 @@ pipeline {
       }
     }
 
-    stage('Test') {
+    stage('Fetching frontend') {
       steps {
         echo 'Fetching apps from the repo'
       }
