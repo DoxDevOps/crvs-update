@@ -8,7 +8,7 @@ pipeline {
       }
     }
 
-    stage('Fetching frontend') {
+    stage('Fetch and build frontend') {
       steps {
         echo 'Fetching frontend  from the repo'
       }
