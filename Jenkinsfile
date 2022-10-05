@@ -10,7 +10,7 @@ pipeline {
 
     stage('Fetching frontend') {
       steps {
-        echo 'Fetching apps from the repo'
+        echo 'Fetching frontend  from the repo'
       }
     }
 
