@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('Initializing') {
       steps {
-        sh 'make'
         echo 'Initializing pipeline...'
       }
     }
