@@ -20,6 +20,12 @@ pipeline {
       }
     }
 
+    stage('Fetching backend') {
+      steps {
+        sh '[ -d "crvs_app" ] && echo "crvs front already cloned." || git clone git@github.com:EGPAFMalawiHIS/crvs.git'
+      }
+    }
+
   }
   options {
     skipStagesAfterUnstable()
