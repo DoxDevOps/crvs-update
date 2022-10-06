@@ -14,7 +14,7 @@ pipeline {
       }
     }
 
-    stage('Fetching Backend ') {
+    stage('Build frontend') {
       steps {
         echo 'Fetching Backend from the repo '
       }
