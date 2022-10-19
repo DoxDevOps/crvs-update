@@ -7,13 +7,6 @@ pipeline {
       }
     }
 
-    stage('Fetch and build frontend') {
-      steps {
-        echo 'Fetching frontend  from the repo'
-        sh '[ -d "crvs_app" ] && echo "crvs front already cloned." || cd $WORKSPACE/crvs_app |git clone  git@github.com:EGPAFMalawiHIS/crvs_app.git'
-      }
-    }
-
   }
   options {
     skipStagesAfterUnstable()
