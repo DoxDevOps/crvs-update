@@ -9,7 +9,7 @@ pipeline {
 
     stage('Fetching CRVS front') {
       steps {
-        sh 'git clone git@github.com:EGPAFMalawiHIS/crvs_app.git'
+        sh 'git clone https://github.com/EGPAFMalawiHIS/crvs_app.git'
       }
     }
 
