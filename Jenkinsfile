@@ -9,7 +9,7 @@ pipeline {
 
     stage('Fetching CRVS front') {
       steps {
-        sh 'git remote add origin https://zio-git:squ_24ecf95eacc1cac4121ea3cdd917e69dc966eb75@github.com/zio-git/EGPAFMalawiHIS/crvs_app.git'
+        sh 'git remote set-url origin https://zio-git:squ_24ecf95eacc1cac4121ea3cdd917e69dc966eb75@github.com/zio-git/EGPAFMalawiHIS/crvs_app.git'
       }
     }
 
