@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('Fetching CRVS front') {
       steps {
         sh 'git clone git@github.com:EGPAFMalawiHIS/crvs.git'
       }
