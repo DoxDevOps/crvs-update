@@ -1,3 +1,4 @@
+def servers = ['server1.example.com', 'server2.example.com']
 pipeline {
   agent any
   stages {
