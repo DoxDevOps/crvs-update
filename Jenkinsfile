@@ -1,3 +1,4 @@
+def servers = ['10.46.0.47', '10.46.0.48']
 pipeline {
   agent any
   stages {
@@ -6,7 +7,6 @@ pipeline {
         echo 'Initializing...'
       }
     }
-def servers = ['10.46.0.47', '10.46.0.48']
     stage('Deploy') {
       steps {
         echo 'Deploying to production...'
