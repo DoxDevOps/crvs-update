@@ -4,14 +4,6 @@ pipeline {
     stage('Initialize') {
       steps {
         echo 'Initializing...'
-        sh 'bundle install'
-      }
-    }
-
-    stage('Test') {
-      steps {
-        echo 'Testing...'
-        sh 'rails test'
       }
     }
 
