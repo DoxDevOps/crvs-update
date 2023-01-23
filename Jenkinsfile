@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Initialize') {
       steps {
-        echo 'Building...'
+        echo 'Initializing...'
         sh 'bundle install'
       }
     }
