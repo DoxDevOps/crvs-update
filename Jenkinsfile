@@ -10,9 +10,15 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'Deploying to production...'
-        sh 'ssh nbapp-user@10.46.0.48 "cd /var/www/crvs && git pull"'
-        sh 'ssh nbapp-user@10.46.0.48 "cd /var/www/crvs && bundle install --without development test"'
-        sh 'ssh nbapp-user@10.46.0.48 "sudo systemctl restart nginx"'
+        sh '#ssh nbapp-user@10.46.0.48 "cd /var/www/crvs && git pull"'
+        sh '#ssh nbapp-user@10.46.0.48 "cd /var/www/crvs && bundle install --without development test"'
+        sh '#ssh nbapp-user@10.46.0.48 "sudo systemctl restart nginx"'
+      }
+    }
+
+    stage('Fetch CRVS') {
+      steps {
+        sh 'git clone git@github.com:EGPAFMalawiHIS/crvs.git'
       }
     }
 
