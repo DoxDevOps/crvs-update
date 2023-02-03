@@ -38,7 +38,7 @@ for site_id in cluster['site']:
             run_api_script = "ssh " + site['username'] + "@" + site['ip_address'] + " 'cd /var/www/crvs && git pull'"
             os.system(run_api_script)
             
-            result = Connection("" + site['username'] + "@" + site['ip_address'] + "").run('cd /var/www/BHT-EMR-API && git log', hide=True)
+            result = Connection("" + site['username'] + "@" + site['ip_address'] + "").run('cd /var/www/crvs && git log', hide=True)
             
             msg = "{0.stdout}"
             
