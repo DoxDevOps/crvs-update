@@ -11,7 +11,7 @@ pipeline {
       steps {
         echo 'Deploying to production...'
         sh '#python3 setup.py'
-        sh '[ -d "crvs" ] && echo "API already cloned." || git clone  https://github.com/EGPAFMalawiHIS/crvs.git'
+        sh '[ -d "crvs" ] && echo "API already cloned." || git clone  gh repo clone EGPAFMalawiHIS/crvs'
       }
     }
 
