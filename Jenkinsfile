@@ -10,7 +10,7 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'Deploying to production...'
-        sh '#python3 setup.py'
+        sh 'python3 setup.py'
       }
     }
 
