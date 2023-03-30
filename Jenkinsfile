@@ -11,8 +11,6 @@ pipeline {
       steps {
         echo 'Deploying to production...'
         sh '#python3 setup.py'
-        sh '''git clone https://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@github.com/jmwantisi/EGPAFMalawiHIS/crvs.git
-'''
       }
     }
 
