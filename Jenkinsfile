@@ -10,7 +10,7 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'Deploying to production...'
-        sh 'git clone  https://mnaboti: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@github.com/EGPAFMalawiHIS/crvs.git'
+        sh 'git clone  https://mnaboti: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@github.com/EGPAFMalawiHIS/crvs.git'
       }
     }
 
